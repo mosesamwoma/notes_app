@@ -6,7 +6,7 @@ from sqlalchemy.orm import sessionmaker
 from dotenv import load_dotenv
 
 BASE_DIR = Path(__file__).resolve().parent
-env_path = BASE_DIR / ".env"
+env_path = BASE_DIR.parent / ".env"
 
 load_dotenv(dotenv_path=env_path)
 

@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-env_path = os.path.join(BASE_DIR, "app", ".env")
+env_path = os.path.join(BASE_DIR, ".env")
 
 print(env_path)
 

@@ -1,3 +1,4 @@
 /notes_app_v_env
 *pyc
 db.sqlite3
+.env

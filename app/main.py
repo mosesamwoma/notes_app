@@ -11,7 +11,7 @@ from app.note_app_routers import users, notes
 from app import models, database, api_key_generator
 
 BASE_DIR = Path(__file__).resolve().parent
-env_path = BASE_DIR / ".env"
+env_path = BASE_DIR.parent / ".env"
 load_dotenv(dotenv_path=env_path)
 
 ADMIN_SECRET = os.getenv("ADMIN_SECRET")

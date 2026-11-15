@@ -6,7 +6,7 @@ from django.core.management.utils import get_random_secret_key
 BASE_DIR = Path(__file__).resolve().parent.parent
 ENV_DIR = Path(__file__).resolve().parent.parent.parent
 
-env_path = os.path.join(ENV_DIR, "app", ".env")
+env_path = os.path.join(ENV_DIR, ".env")
 load_dotenv(dotenv_path=env_path)
 
 SECRET_KEY = os.getenv("DJANGO_SECRET_KEY") or get_random_secret_key()
